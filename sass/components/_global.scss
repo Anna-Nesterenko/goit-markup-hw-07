@@ -28,3 +28,24 @@ a {
 ul {
   @extend %ul;
 }
+
+.container {
+  @extend %container;
+}
+
+.section {
+  @include PaddingAll(94px, 0, 94px, 0);
+}
+
+.btn {
+  @extend %btn;
+}
+
+.btn--style {
+  @extend %btn--style;
+}
+
+.social {
+  @extend %social;
+  @include FlexJustiAlign(center, center);
+}

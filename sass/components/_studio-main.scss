@@ -1,0 +1,65 @@
+.qualities {
+  &__list {
+    @include FlexWrap();
+  }
+
+  &__img {
+    @include FlexJustiAlign(center, center);
+    height: 120px;
+    border-radius: 4px;
+    background-color: $BackgroundBoxLight;
+  }
+
+  &__title {
+    @include MarginAll(30px, 0, 10px, 0);
+    color: $SecondTextColor;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    line-height: 1.71;
+  }
+}
+
+.qualities__item {
+  width: 270px;
+  @include MarginAll(0, 30px, 0, 0);
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.section {
+  &__none {
+    padding-top: 0;
+  }
+
+  &__title {
+    @extend %cards-title;
+  }
+}
+
+.examples {
+  @include FlexWrap();
+  @include MarginAll(50px, 0, 0, 0);
+
+  &__title {
+    @include Position(absolute, 0, 0, 100%, 70px);
+    @include FlexJustiAlign(center, center);
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $WhiteTextColor;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+}
+
+.examples__pict {
+  position: relative;
+  @include MarginAll(0, 30px, 0, 0);
+  width: calc((100% - 60px) / 3);
+  &:last-child {
+    margin-right: 0;
+  }
+}

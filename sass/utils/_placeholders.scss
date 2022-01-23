@@ -3,7 +3,7 @@
 }
 
 %body {
-  font-family: "Roboto", "sans-serif";
+  font-family: $FontFamilyMain;
   color: $MainTextColor;
   background-color: $WhiteTextColor;
   font-size: 14px;
@@ -39,14 +39,47 @@
   margin-right: auto;
 }
 
-%section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 %btn {
   display: inline-block;
   border-radius: 4px;
   border: transparent;
   font-size: 16px;
+}
+
+%btn--style {
+  color: $WhiteTextColor;
+  background-color: $AccentColor;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  transition: background-color $TimingFunction, box-shadow $TimingFunction;
+}
+
+%social {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+%logo {
+  color: $AccentColor;
+  font-family: $FontFamilySecond;
+  font-weight: 700;
+  font-size: 26px;
+}
+%visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+%cards-title {
+  color: $SecondTextColor;
+  font-size: 36px;
+  text-align: center;
 }

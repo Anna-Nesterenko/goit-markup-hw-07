@@ -1,7 +1,74 @@
 .header {
   border-bottom: 1px solid #ececec;
+
+  &__flex {
+    @include FlexJustiAlign(none, center);
+  }
 }
 
-.container {
-  @extend %container;
+.container__flex {
+  @include FlexJustiAlign(none, center);
+}
+
+.logo {
+  @extend %logo;
+
+  &--dark {
+    color: $BlackTextColor;
+  }
+}
+
+.nav {
+  display: flex;
+  @include MarginAll(0, 0, 0, 93px);
+
+  &__item:not(:last-child) {
+    @include MarginAll(0, 50px, 0, 0);
+  }
+
+  &__link {
+    display: block;
+    @include PaddingAll(32px, 0, 32px, 0);
+    color: $SecondTextColor;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    transition: color $TimingFunction;
+  }
+  &__link:focus,
+  &__link:hover {
+    color: $AccentColor;
+  }
+}
+
+.contact {
+  @include FlexJustiAlign(none, none);
+  @include MarginAll(0, 0, 0, auto);
+
+  & &__item + &__item {
+    @include MarginAll(0, 0, 0, 50px);
+  }
+
+  &__item {
+    @include FlexJustiAlign(none, center);
+    flex-direction: row-reverse;
+  }
+
+  &__icon {
+    fill: currentColor;
+    @include MarginAll(0, 10px, 0, 0);
+  }
+}
+
+.contact__link {
+  @include FlexJustiAlign(none, center);
+  @include PaddingAll(32px, 0, 32px, 0);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: $MainTextColor;
+  transition: color $TimingFunction;
+
+  &:focus,
+  &:hover {
+    color: $AccentColor;
+  }
 }

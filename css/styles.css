@@ -69,7 +69,8 @@ ul {
   border: transparent;
   font-size: 16px;
 }
-.btn-style {
+
+.btn--style {
   color: var(--white-text-color);
   background-color: var(--accent-text-color);
   font-weight: 700;
@@ -108,6 +109,7 @@ ul {
 .logo--dark {
   color: #000000;
 }
+
 .nav {
   display: flex;
   margin-left: 93px;
@@ -208,12 +210,12 @@ ul {
   text-transform: uppercase;
 }
 
-.btn-main {
+.btn__hero {
   padding: 10px 32px;
 }
 
-.btn-main:focus,
-.btn-main:hover {
+.btn__hero:focus,
+.btn__hero:hover {
   background-color: #188ce8;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -299,7 +301,7 @@ ul {
   color: var(--white-text-color);
   background-color: rgba(47, 48, 58, 0.8);
 }
-
+/* *TODO */
 .section.background {
   background-color: var(--background-box-light);
 }

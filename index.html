@@ -17,15 +17,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
     <!-- !Шапка -->
 
     <header class="header">
-      <div class="container flex">
-        <nav class="flex">
+      <div class="container container__flex">
+        <nav class="header__flex">
           <a class="logo" href="./index.html"
             >Web<span class="logo logo--dark">Studio</span></a
           >
@@ -42,16 +42,16 @@
         </nav>
 
         <ul class="contact">
-          <li class="contact__item flex">
-            <a class="contact__link flex" href="mailto:info@devstudio.com">
+          <li class="contact__item">
+            <a class="contact__link" href="mailto:info@devstudio.com">
               <svg class="contact__icon" width="16px" height="12px">
                 <use href="./imeges/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="contact__item flex">
-            <a class="contact__link flex" href="tel:+380961111111">
+          <li class="contact__item">
+            <a class="contact__link" href="tel:+380961111111">
               <svg class="contact__icon" width="10px" height="16px">
                 <use href="./imeges/icons.svg#icon-smartphone"></use>
               </svg>
@@ -68,61 +68,65 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-          <button class="btn-main btn-style btn" type="button" data-modal-open>
+          <button
+            class="btn btn__hero btn--style"
+            type="button"
+            data-modal-open
+          >
             Заказать услугу
           </button>
         </div>
       </section>
 
       <!-- !Список качеств-->
-      <section class="section">
+      <section class="section qualities">
         <div class="container">
           <h2 class="visually-hidden">Список качеств</h2>
-          <ul class="qualities-list">
-            <li class="qualities-item">
-              <div class="qualities-img flex">
-                <svg class="qualities-icon" width="70px" height="70px">
+          <ul class="qualities__list">
+            <li class="qualities__item">
+              <div class="qualities__img">
+                <svg width="70px" height="70px">
                   <use href="./imeges/icons.svg#icon-lamp"></use>
                 </svg>
               </div>
-              <h3 class="qualities-title">Внимание к деталям</h3>
-              <p class="qualities-text">
+              <h3 class="qualities__title">Внимание к деталям</h3>
+              <p class="qualities__text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="qualities-item">
-              <div class="qualities-img flex">
-                <svg class="qualities-icon" width="70px" height="70px">
+            <li class="qualities__item">
+              <div class="qualities__img">
+                <svg width="70px" height="70px">
                   <use href="./imeges/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="qualities-title">Пунктуальность</h3>
-              <p class="qualities-text">
+              <h3 class="qualities__title">Пунктуальность</h3>
+              <p class="qualities__text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="qualities-item">
-              <div class="qualities-img flex">
-                <svg class="qualities-icon" width="70px" height="70px">
+            <li class="qualities__item">
+              <div class="qualities__img">
+                <svg width="70px" height="70px">
                   <use href="./imeges/icons.svg#icon-comp"></use>
                 </svg>
               </div>
-              <h3 class="qualities-title">Планирование</h3>
-              <p class="qualities-text">
+              <h3 class="qualities__title">Планирование</h3>
+              <p class="qualities__text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="qualities-item">
-              <div class="qualities-img flex">
-                <svg class="qualities-icon" width="70px" height="70px">
+            <li class="qualities__item">
+              <div class="qualities__img">
+                <svg width="70px" height="70px">
                   <use href="./imeges/icons.svg#icon-cosmo"></use>
                 </svg>
               </div>
-              <h3 class="qualities-title">Современные технологии</h3>
-              <p class="qualities-text">
+              <h3 class="qualities__title">Современные технологии</h3>
+              <p class="qualities__text">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
@@ -133,23 +137,23 @@
 
       <!-- !Список примеров -->
 
-      <section class="section none">
+      <section class="section section__none">
         <div class="container">
-          <h2 class="examples-title">Чем мы занимаемся</h2>
+          <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="examples">
-            <li class="examples-pict">
+            <li class="examples__pict">
               <img src="./imeges/img1.jpg" alt="work computer" width="370" />
-              <h3 class="thumb-title flex">Десктопные приложения</h3>
+              <h3 class="examples__title flex">Десктопные приложения</h3>
             </li>
-            <li class="examples-pict">
+            <li class="examples__pict">
               <img src="./imeges/img2.jpg" alt="work phone" width="370" />
 
-              <h3 class="thumb-title flex">Мобильные приложения</h3>
+              <h3 class="examples__title flex">Мобильные приложения</h3>
             </li>
-            <li class="examples-pict">
+            <li class="examples__pict">
               <img src="./imeges/img3.jpg" alt="work tab" width="370" />
 
-              <h3 class="thumb-title flex">Дизайнерские решения</h3>
+              <h3 class="examples__title flex">Дизайнерские решения</h3>
             </li>
           </ul>
         </div>

@@ -1,0 +1,14 @@
+.current {
+  position: relative;
+  color: $AccentColor;
+
+  &::after {
+    content: "";
+    @include Position(absolute, 0, 0, 100%, 4px);
+    border-radius: 2px;
+    background-color: $AccentColor;
+  }
+}
+.visually-hidden {
+  @extend %visually-hidden;
+}

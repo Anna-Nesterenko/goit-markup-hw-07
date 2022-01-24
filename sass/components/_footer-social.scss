@@ -1,0 +1,31 @@
+.footer-social {
+  &__title {
+    margin-bottom: 20px;
+    color: $WhiteTextColor;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item + &__item {
+    margin-left: 10px;
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}
+
+.footer-social__link {
+  background-color: hsla(0, 0%, 100%, 0.1);
+  color: $WhiteTextColor;
+  transition: background-color $TimingFunction;
+
+  &:hover,
+  &:focus {
+    background-color: $AccentColor;
+  }
+}

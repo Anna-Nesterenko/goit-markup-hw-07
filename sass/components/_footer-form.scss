@@ -1,0 +1,51 @@
+.footer-form {
+  margin-left: auto;
+
+  &__title {
+    margin-bottom: 20px;
+    color: $WhiteTextColor;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  &__wrap {
+    @include FlexJustiAlign($justify: none);
+  }
+}
+
+.footer-form__input {
+  width: 358px;
+  margin: 0;
+  padding: 15px 16px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: $WhiteTextColor;
+  background-color: $BackgroundBoxDark;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.btn {
+  &__footer--icon {
+    fill: currentColor;
+    margin-left: 10px;
+  }
+}
+
+.btn__footer {
+  @include FlexJustiAlign($justify: none);
+  margin-left: 12px;
+  padding: 10px 28px;
+  color: $WhiteTextColor;
+  transition: background-color $TimingFunction, box-shadow $TimingFunction;
+
+  &:focus,
+  &:hover {
+    background-color: $BackgroundAccentColor;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}

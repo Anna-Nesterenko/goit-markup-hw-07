@@ -4,14 +4,15 @@
   }
 
   &__img {
-    @include FlexJustiAlign(center, center);
+    @include FlexJustiAlign();
     height: 120px;
     border-radius: 4px;
     background-color: $BackgroundBoxLight;
   }
 
   &__title {
-    @include MarginAll(30px, 0, 10px, 0);
+    margin-top: 30px;
+    margin-bottom: 10px;
     color: $SecondTextColor;
     font-size: 14px;
     text-transform: uppercase;
@@ -24,7 +25,7 @@
 
 .qualities__item {
   width: 270px;
-  @include MarginAll(0, 30px, 0, 0);
+  margin-right: 30px;
 
   &:last-child {
     margin-right: 0;
@@ -43,11 +44,11 @@
 
 .examples {
   @include FlexWrap();
-  @include MarginAll(50px, 0, 0, 0);
+  margin-top: 50px;
 
   &__title {
-    @include Position(absolute, 0, 0, 100%, 70px);
-    @include FlexJustiAlign(center, center);
+    @include Position(70px);
+    @include FlexJustiAlign();
     font-size: 14px;
     text-transform: uppercase;
     color: $WhiteTextColor;
@@ -57,8 +58,8 @@
 
 .examples__pict {
   position: relative;
-  @include MarginAll(0, 30px, 0, 0);
-  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  flex-basis: calc((100% - 60px) / 3);
   &:last-child {
     margin-right: 0;
   }

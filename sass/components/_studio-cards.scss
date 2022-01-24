@@ -1,0 +1,74 @@
+.team {
+  background-color: $BackgroundBoxLight;
+
+  &__title {
+    @extend %cards-title;
+  }
+
+  &__list {
+    @include FlexWrap();
+    margin-top: 50px;
+  }
+
+  &__shadow {
+    @extend %box-shadow-team;
+  }
+}
+
+.team__item {
+  flex-basis: calc((100% - 90px) / 4);
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.team-box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 0 0 4px 4px;
+  @extend %box-shadow-team;
+  background-color: $WhiteTextColor;
+
+  &__name {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.19;
+    text-align: center;
+    color: $SecondTextColor;
+  }
+
+  &__text {
+    margin-top: 10px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: $MainTextColor;
+  }
+}
+
+.team-social {
+  @include FlexJustiAlign($align: none);
+
+  &__item + &__item {
+    margin-left: 10px;
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}
+
+.team-social__link {
+  background-color: $WhiteTextColor;
+  color: $ColorIconMain;
+  transition: color $TimingFunction, background-color $TimingFunction;
+
+  &:hover,
+  &:focus {
+    background-color: $AccentColor;
+    color: $WhiteTextColor;
+  }
+}

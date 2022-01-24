@@ -7,8 +7,9 @@
       $BackgroundShadowDark
     ),
     url(../../imeges/offise.jpg);
-  @include PaddingAll(200px, 0, 200px, 0);
-  @include MarginAll(0, auto, 0, auto);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin: 0 auto;
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,8 +17,8 @@
 }
 
 .hero__title {
-  width: 700px;
-  @include MarginAll(0, auto, 30px, auto);
+  max-width: 700px;
+  margin: 0 auto 30px auto;
   color: $WhiteTextColor;
   font-size: 44px;
   font-weight: 900;
@@ -27,7 +28,7 @@
 }
 
 .btn__hero {
-  @include PaddingAll(10px, 32px, 10px, 32px);
+  padding: 10px 32px;
 
   &:focus,
   &:hover {

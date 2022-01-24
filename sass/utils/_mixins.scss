@@ -1,30 +1,18 @@
-@mixin FlexJustiAlign($justify: center, $align) {
+@mixin FlexJustiAlign($justify: center, $align: center) {
   display: flex;
   justify-content: $justify;
   align-items: $align;
 }
-@mixin FlexWrap {
+
+@mixin FlexWrap($wrap: wrap) {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: $wrap;
 }
 
-@mixin PaddingAll($top, $right, $bottom, $left) {
-  padding-top: $top;
-  padding-right: $right;
-  padding-bottom: $bottom;
-  padding-left: $left;
-}
-
-@mixin MarginAll($top, $right, $bottom, $left) {
-  margin-top: $top;
-  margin-right: $right;
-  margin-bottom: $bottom;
-  margin-left: $left;
-}
-@mixin Position($position, $left, $bottom, $width, $height) {
-  position: $position;
-  left: $left;
-  bottom: $bottom;
-  width: $width;
+@mixin Position($height) {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   height: $height;
 }

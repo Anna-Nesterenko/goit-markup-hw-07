@@ -34,7 +34,8 @@ ul {
 }
 
 .section {
-  @include PaddingAll(94px, 0, 94px, 0);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .btn {
@@ -47,5 +48,9 @@ ul {
 
 .social {
   @extend %social;
-  @include FlexJustiAlign(center, center);
+  @include FlexJustiAlign();
+}
+
+.visually-hidden {
+  @extend %visually-hidden;
 }

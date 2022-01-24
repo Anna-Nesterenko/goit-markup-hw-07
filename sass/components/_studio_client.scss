@@ -1,0 +1,35 @@
+.client {
+  &__title {
+    @extend %cards-title;
+  }
+
+  &__list {
+    display: flex;
+    margin-top: 50px;
+  }
+
+  &__item + &__item {
+    margin-left: 30px;
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}
+
+.client__link {
+  @include FlexJustiAlign();
+  width: 170px;
+  height: 92px;
+  border: 1px solid $ColorIconMain;
+  border-radius: 4px;
+  color: $ColorIconMain;
+  background-color: $WhiteTextColor;
+  transition: color $TimingFunction, border-color $TimingFunction;
+
+  &:focus,
+  &:hover {
+    border-color: $AccentColor;
+    color: $AccentColor;
+  }
+}

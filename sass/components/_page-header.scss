@@ -2,12 +2,12 @@
   border-bottom: 1px solid #ececec;
 
   &__flex {
-    @include FlexJustiAlign(none, center);
+    @include FlexJustiAlign($justify: none);
   }
 }
 
 .container__flex {
-  @include FlexJustiAlign(none, center);
+  @include FlexJustiAlign($justify: none);
 }
 
 .logo {
@@ -20,15 +20,16 @@
 
 .nav {
   display: flex;
-  @include MarginAll(0, 0, 0, 93px);
+  margin-left: 93px;
 
   &__item:not(:last-child) {
-    @include MarginAll(0, 50px, 0, 0);
+    margin-right: 50px;
   }
 
   &__link {
     display: block;
-    @include PaddingAll(32px, 0, 32px, 0);
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: $SecondTextColor;
     font-weight: 500;
     letter-spacing: 0.02em;
@@ -40,28 +41,41 @@
   }
 }
 
+.current {
+  position: relative;
+  color: $AccentColor;
+
+  &::after {
+    content: "";
+    @include Position(4px);
+    border-radius: 2px;
+    background-color: $AccentColor;
+  }
+}
+
 .contact {
-  @include FlexJustiAlign(none, none);
-  @include MarginAll(0, 0, 0, auto);
+  display: flex;
+  margin-left: auto;
 
   & &__item + &__item {
-    @include MarginAll(0, 0, 0, 50px);
+    margin-left: 50px;
   }
 
   &__item {
-    @include FlexJustiAlign(none, center);
+    @include FlexJustiAlign($justify: none);
     flex-direction: row-reverse;
   }
 
   &__icon {
     fill: currentColor;
-    @include MarginAll(0, 10px, 0, 0);
+    margin-right: 10px;
   }
 }
 
 .contact__link {
-  @include FlexJustiAlign(none, center);
-  @include PaddingAll(32px, 0, 32px, 0);
+  @include FlexJustiAlign($justify: none);
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: $MainTextColor;

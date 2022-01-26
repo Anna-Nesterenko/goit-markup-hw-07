@@ -79,8 +79,7 @@ ul {
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
-.pictures__link:hover, .pictures__link:focus, .pictures__shadow:hover,
-.pictures__shadow:focus {
+.pictures__link:hover, .pictures__link:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
@@ -496,11 +495,6 @@ a {
 .pictures__link:hover .pictures__overlay,
 .pictures__link:focus .pictures__overlay {
   transform: translateY(0);
-}
-
-.pictures__shadow:hover,
-.pictures__shadow:focus {
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .pictures__box {

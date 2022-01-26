@@ -16,3 +16,8 @@
   width: 100%;
   height: $height;
 }
+
+@mixin FontSize($size, $line-height) {
+  font-size: $size;
+  line-height: $line-height;
+}

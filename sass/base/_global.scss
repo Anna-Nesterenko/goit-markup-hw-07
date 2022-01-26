@@ -1,34 +1,3 @@
-html {
-  @extend %html;
-}
-
-body {
-  @extend %body;
-}
-
-button {
-  @extend %button;
-}
-
-img {
-  @extend %img;
-}
-
-p,
-h1,
-h2,
-h3 {
-  margin: 0;
-}
-
-a {
-  @extend %a;
-}
-
-ul {
-  @extend %ul;
-}
-
 .container {
   @extend %container;
 }

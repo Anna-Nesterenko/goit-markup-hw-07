@@ -2,7 +2,8 @@
 @import "./utils/placeholders";
 @import "./utils/mixins";
 
-@import "./components/global";
+@import "./base/reset";
+@import "./base/global";
 
 @import "./components/page-header";
 

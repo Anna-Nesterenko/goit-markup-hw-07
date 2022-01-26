@@ -23,8 +23,7 @@
   background-color: $BackgroundBoxDark;
 
   &::placeholder {
-    font-size: 16px;
-    line-height: 1.25;
+    @include FontSize(16px, 1.25);
     color: rgba(255, 255, 255, 0.6);
   }
 }

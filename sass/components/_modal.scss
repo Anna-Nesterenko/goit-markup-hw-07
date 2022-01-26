@@ -15,8 +15,10 @@
   visibility: hidden;
 }
 
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(1.5) rotate(360deg);
+.backdrop.is-hidden {
+  .modal {
+    transform: translate(-50%, -50%) scale(1.5) rotate(360deg);
+  }
 }
 
 .modal {

@@ -1,0 +1,30 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  @extend %body;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  @extend %img;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  @extend %ul;
+}
